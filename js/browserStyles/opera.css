@@ -1,0 +1,25 @@
+/* ================================= */
+/*                                 = */
+/* =     Opera Stylesheet for      = */
+/* =  What the heck do vegans eat  = */
+/*                                 = */
+/* ================================= */
+
+
+/* menu spacing fixes */
+#menu ul li ul li{font-size: 14px;}
+li.bottomLinks a {font-size: 14px;}
+
+/* =============== */
+/* = All Recipes = */
+/* =============== */
+#allRecipesTitle{margin-top: -15px;}
+
+#allRecipesTitle h2{width: 380px;}
+
+#recipeContainer{width: 700px;}
+
+input#recipeSearch{
+	font-size: 13px;
+	padding: 3px;
+}

@@ -1,0 +1,33 @@
+/* =============================== */
+/*                               = */
+/* =     IE6 Stylesheet for      = */
+/* = What the heck do vegans eat = */
+/*                               = */
+/* =============================== */
+
+/* header */
+#header{
+	height: 50px;
+	padding-top: 20px;
+}
+
+#headerBand1, #headerBand2, #headerBand3, #headerBand4{height: 88px;}
+
+/* menu spacing fixes */
+#menu ul{
+	margin-top: -10px;
+	margin-left: 0px;
+}
+
+#menu ul li ul li{font-size: 14px;}
+
+/* search box position */
+form#searchform div input{margin-top: -20px;}
+
+
+/* =============== */
+/* = All Recipes = */
+/* =============== */
+#allRecipesTitle h2{width: 380px;}
+
+#recipeContainer{width: 700px;}

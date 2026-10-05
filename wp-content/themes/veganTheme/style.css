@@ -1,0 +1,566 @@
+/*   
+Theme Name: What the heck do vegans eat?
+Theme URI: http://www.michaelgeraci.com
+Description: A custom theme for the vegan bloggers.
+Author: Michael P. Geraci
+Author URI: http://www.michaelgeraci.com
+*/
+
+body{
+	background: #fbfae5;
+	color: #000;
+	font-family: Georgia, serif;
+}
+
+/* ======================== */
+/* = centered content box = */
+/* ======================== */
+#centeredContent{
+	margin-top: -10px;
+	margin-right: auto;
+	margin-left: auto; 	/* opera does not like 'margin:20px auto' */
+	text-align:left; /* part 2 of 2 centering hack */
+	width: 999px; /* ie5win fudge begins */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 999px;
+}
+html>body #centeredContent{width: 999px; /* ie5win fudge ends */}
+
+
+/* ========== */
+/* = header = */
+/* ========== */
+#headerBand1, #headerBand2, #headerBand3, #headerBand4{
+	width: 10px;
+	height: 77px;
+	float: left;
+}
+
+#headerBand1{background: #F87D37;}
+#headerBand2{background: #b263d7;}
+#headerBand3{background: #F06F97;}
+#headerBand4{background: #47BCB8;}
+
+#header{
+	float: left;
+	clear: right;
+	width: 959px;
+	background: #ba952e;
+	font-size: 50px;
+	height: 57px;
+	color: #0cb48a;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 10px 0 10px 0;
+}
+
+#header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header a:hover {
+	text-decoration: underline;
+}
+
+
+/* =========== */
+/* = content = */
+/* =========== */
+#content {
+	float: left;
+	clear: left;
+	width: 720px;
+}
+
+
+/* ======== */
+/* = menu = */
+/* ======== */
+#menu{
+	float: right;
+	width: 190px;
+	border-left: 1px solid #ccc;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+#menu.allRecipes{
+  margin-top: 75px;
+}
+
+/* search */
+#menu input#s{
+	width: 180px;
+	border: 1px solid #999;
+	background: #fffef9;
+	padding: 3px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+/* the menu ul - the color changes the titles of the sections */
+#menu ul{
+	font-size: 19px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	color: #ba952e;
+	font-weight: bold;
+	list-style-type: none;
+	margin: -17px 0 0 -40px;
+	text-transform: lowercase;
+}
+
+#menu ul li{
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 10px;
+	padding-bottom: 2px;
+}
+
+/* the contents of each section */
+#menu ul ul{
+	list-style-type: none;
+	margin: 0px;
+	margin-left: -10px;
+	padding: 0px;
+}
+
+#menu ul ul li {
+	border: 0;
+	font: normal normal 12px/115% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: 0;
+	margin-top: 0;
+	padding: 0;
+	padding-left: 12px;
+}
+
+ul ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+#menu ul ul ul.children {
+	font-size: 142%;
+	padding-left: 4px;
+}
+
+/* get rid of category uncategorized */
+.cat-item-1{display: none;}
+
+/* font size */
+#menu ul li ul li{font-size: 14px;}
+li.bottomLinks{font-size: 14px ! important;}
+
+img.rssImage{
+	position: relative;
+	top: 4px;
+}
+
+
+/* ========== */
+/* = footer = */
+/* ========== */
+.footer{
+	float: left;
+	clear: both;
+	width: 999px;
+	color: #444;
+	font-size: 12px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	padding: 3px;
+	text-align: center;
+}
+
+.footer a:link, .footer a:active, .footer a:visited{color: #666;}
+.footer a:hover{color: #000;}
+
+.screen-reader-text{
+     position: absolute;
+     left: -1000em;
+}
+
+a:link, a:active, a:visited{color: #555;}
+a:hover{color: #000; text-decoration: underline;}
+
+a img{border: none;}
+
+acronym, abbr{border-bottom: 1px dashed #333;}
+
+acronym, abbr, span.caps{
+	font-size: 90%;
+	letter-spacing: .07em;
+}
+
+acronym, abbr{cursor: help;}
+
+blockquote{
+	border-left: 5px solid #ccc;
+	margin-left: 1.5em;
+	padding-left: 5px;
+}
+
+/* the date */
+h2{
+	width: 100%;
+	text-align: right;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 20px;
+	color: #C8B780;
+	letter-spacing: 0.2em;
+	margin: 15px 0 18px 0;
+	padding-bottom: 2px;
+}
+
+/* post title */
+h3{
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 32px;
+	margin-top: 0;
+	display: inline;
+}
+
+/* post conatiner */
+.post{margin-bottom: 20px;}
+
+/* the post title is a link, so here's its color */
+a.marcy:link, a.marcy:active, a.marcy:visited{color: #b263d7; text-decoration: none;}
+a.marcy:hover{color: #b263d7; text-decoration: underline;}
+
+a.stacey:link, a.stacey:active, a.stacey:visited{color: #F87D37; text-decoration: none;}
+a.stacey:hover{color: #F87D37; text-decoration: underline;}
+
+a.katherine:link, a.katherine:active, a.katherine:visited{color: #F06F97; text-decoration: none;}
+a.katherine:hover{color: #F06F97; text-decoration: underline;}
+
+a.emily:link, a.emily:active, a.emily:visited{color: #47BCB8; text-decoration: none;}
+a.emily:hover{color: #47BCB8; text-decoration: underline;}
+
+ol#comments li p{font-size: 100%;}
+
+/* text in post */
+p, .feedback {
+	font-size: 16px;
+	font-family: Georgia, serif;
+}
+
+/* recipe */
+span.recipeLink{display: inline;}
+
+div.postByMarcy .storycontent .recipeLink:link, div.postByMarcy .storycontent .recipeLink:active, div.postByMarcy .storycontent .recipeLink:visited{color: #b263d7; text-decoration: none;}
+div.postByEmily .storycontent .recipeLink:link, div.postByEmily .storycontent .recipeLink:active, div.postByEmily .storycontent .recipeLink:visited{color: #47BCB8; text-decoration: none;}
+div.postByKatherine .storycontent .recipeLink:link, div.postByKatherine .storycontent .recipeLink:active, div.postByKatherine .storycontent .recipeLink:visited{color: #F06F97; text-decoration: none;}
+div.postByStacey .storycontent .recipeLink:link, div.postByStacey .storycontent .recipeLink:active, div.postByStacey .storycontent .recipeLink:visited{color: #F87D37; text-decoration: none;}
+.recipeLink:hover{text-decoration: underline ! important;}
+
+/*div.recipe{display: none;}*/
+#Marcy .ui-widget-header{background: #b263d7;}
+#Emily .ui-widget-header{background: #47BCB8;}
+#Katherine .ui-widget-header{background: #F06F97;}
+#Stacey .ui-widget-header{background: #F87D37;}
+
+#marcy .ui-widget-header{background: #b263d7;}
+#emily .ui-widget-header{background: #47BCB8;}
+#katherine .ui-widget-header{background: #F06F97;}
+#stacey .ui-widget-header{background: #F87D37;}
+
+.Marcy, .marcy{color: #b263d7;}
+.Emily, .emily{color: #47BCB8;}
+.Katherine, .katherine{color: #F06F97;}
+.Stacey, .stacey{color: #F87D37;}
+
+.ui-dialog-content a:link, .ui-dialog-content a:active, .ui-dialog-content a:visited{color: #555; text-decoration: underline;}
+.ui-dialog-content a:hover{color: #000; text-decoration: underline;}
+
+
+/* ==================== */
+/* = all recipes page = */
+/* ==================== */
+#allRecipesHeader{
+  width: 970px;
+  float: left;
+  clear: both;
+}
+
+#allRecipesTitle{
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#allRecipesTitle h2{
+	float: left;
+	text-align: left;
+	width: 390px;
+	margin-bottom: 2px;
+}
+
+#recipesBack{
+	float: left;
+	clear: both;
+}
+
+/* holds the search box */
+#searchContainer{
+	float: right;
+	text-align: right;
+	margin-top: 0;
+	position: relative;
+	left: 30px;
+}
+
+/* search box states */
+input.inactive{
+	color: #888;
+	font-style: oblique;
+}
+
+input.active{
+	color: #000;
+	font-style: normal;
+}
+
+/* the search button */
+#allRecipesButton{
+	margin-left: 5px;
+}
+
+/* holds the recipe list */
+#recipeContainer{
+	float: left;
+	clear: left;
+	width: 730px !important;
+}
+
+/* letter header in recipe list */
+span.alphabet{
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 20px;
+	color: #C8B780;
+	margin: 15px 0 2px 0;
+	padding-bottom: 2px;
+}
+
+/* the floating columns in recipe list */
+.recipeColumn{
+	float: left;
+	width: 350px;
+	margin: 0 20px 0 0;
+}
+
+/* type of recipes spacing */
+ul#sidebarType li{margin-bottom: 3px;}
+
+
+/* ======== */
+/* = Meta = */
+/* ======== */
+
+/* classes used by the_meta() */
+ul.post-meta{list-style: none;}
+
+ul.post-meta span.post-meta-key{font-weight: bold;}
+
+.feedback{
+	color: #ccc;
+	text-align: right;
+	clear: both;
+}
+
+.meta{
+	font-size: 13px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	color: #888;
+}
+
+.meta li, ul.post-meta li{display: inline;}
+
+.meta ul{
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.meta a:link, .meta a:active, .meta a:visited{color: #777;}
+.meta a:hover{color: #555;}
+
+
+/* ============ */
+/* = Comments = */
+/* ============ */
+#commentform #author, #commentform #email, #commentform #url, #commentform textarea{
+	background: #fff;
+	border: 1px solid #333;
+	padding: .2em;
+}
+
+#commentform textarea{width: 100%;}
+
+#commentlist li ul{
+	border-left: 1px solid #ddd;
+	font-size: 110%;
+	list-style-type: none;
+}
+
+#commentlist li .avatar{
+	float: right;
+	margin-top: 17px;
+	margin-right: 25px;
+	padding: 0 0 5px 5px;
+}
+
+.comment{
+	background: #fbf3d7;
+	padding: 17px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-bottom: 20px;
+}
+
+.comment-childs{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+/* ============ */
+/* = calendar = */
+/* ============ */
+#wp-calendar {
+	border: 1px solid #ddd;
+	empty-cells: show;
+	font-size: 14px;
+	margin: 0;
+	width: 90%;
+}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+}
+
+#wp-calendar a {
+	display: block;
+	text-decoration: none;
+}
+
+#wp-calendar a:hover {
+	background: #e0e6e0;
+	color: #333;
+}
+
+#wp-calendar caption {
+	color: #999;
+	font-size: 16px;
+	text-align: left;
+}
+
+#wp-calendar td {
+	color: #ccc;
+	font: normal 12px 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: normal;
+	padding: 2px 0;
+	text-align: center;
+}
+
+#wp-calendar td.pad:hover {
+	background: #fff;
+}
+
+#wp-calendar td:hover, #wp-calendar #today {
+	background: #eee;
+	color: #bbb;
+}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+}
+
+
+/* ======================= */
+/* = captions & aligment = */
+/* ======================= */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+
+/* ============== */
+/* = about page = */
+/* ============== */
+.bioContainer{
+	float: left;
+	clear: both;
+	width: 720px;
+}
+
+.bioPic{
+	float: left;
+	clear: left;
+	margin-right: 25px;
+	width: 150px;
+	height: 150px;
+}
+
+.bioText{
+	float: left;
+	width: 525px;
+}
+
+.bioText p{padding: none;}
+
+span.bioHeader{
+	float: left;
+	clear: both;
+	text-align: left;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 20px;
+	letter-spacing: 0.2em;
+	margin-bottom: 2px;
+	padding-bottom: 2px;	
+}

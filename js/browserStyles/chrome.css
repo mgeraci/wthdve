@@ -1,0 +1,19 @@
+/* ================================== */
+/*                                  = */
+/* =     Chrome Stylesheet for      = */
+/* =  What the heck do vegans eat   = */
+/*                                  = */
+/* ================================== */
+
+
+/* menu spacing fixes */
+li.bottomLinks a{font-size: 14px;}
+
+/* =============== */
+/* = All Recipes = */
+/* =============== */
+#allRecipesTitle{margin-top: -15px;}
+
+#allRecipesTitle h2{width: 380px;}
+
+#recipeContainer{width: 700px;}

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	    <title>Make a Recipe from your Selection</title>
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript" src="http://vegan.katherineerickson.com/wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+		<script type="text/javascript">
+			var HighlightDialog = {
+			    local_ed : 'ed',
+			    init : function(ed) {
+			        HighlightDialog.local_ed = ed;
+			        // tinyMCEPopup.resizeToInnerSize();
+			    },
+			    insert : function insertHighlightSection(ed) {
+			        // Get Properties
+			        var sentence = jQuery('#highlight-dialog input[name=sentence]').val();
+			        var recipeTitle = jQuery('#highlight-dialog input[name=recipeTitle]').val();
+					var recipeCategory = jQuery('#highlight-dialog select[name=recipeCategory]').val();
+ 
+					// apply
+			        var output = '';
+		            output += '<a class="recipeLink" href="#" onclick="return false;">' + sentence + '</a><div class="recipe" title="' + recipeTitle + '"><span style="display: none;">' + recipeCategory + '</span>' + HighlightDialog.local_ed.selection.getContent() + '</div>';
+ 
+			        tinyMCEPopup.execCommand('mceReplaceContent', false, output);
+ 
+			        // Return
+			        tinyMCEPopup.close();
+			    }
+			};
+			tinyMCEPopup.onInit.add(HighlightDialog.init, HighlightDialog);
+ 
+			document.write('<base href="'+tinymce.baseURL+'" />');
+		</script>
+		<style>
+			#highlight-dialog table tr td{padding: 5px; font-size: 16px;}
+			input, select{width: 200px; height: 20px; font-size: 14px; padding: 5px;}
+			select{height: 35px;}
+			.align{padding: 0 0 0 25px;}
+			.image-align-left-label{background: transparent url(/wp-content/plugins/tinymce-custom/mce/highlight/align-left.png) no-repeat scroll left;}
+			.image-align-right-label{background: transparent url(/wp-content/plugins/tinymce-custom/mce/highlight/align-right.png) no-repeat scroll left;}
+			.image-align-none-label{background: transparent url(/wp-content/plugins/tinymce-custom/mce/highlight/align-none.png) no-repeat scroll left;}
+			a{text-decoration: none; font-weight: bold;}
+		</style>
+		<base target="_self" />
+	</head>
+	<body>
+	    <div align="center" id="highlight-dialog">
+	        <form action="/" method="get" accept-charset="utf-8">
+	            <p>
+					did you remember to highlight your recipe before you clicked this button?
+	                <table border="0" cellspacing="0" width="290" cellpadding="5">
+	                    <tr>
+							<td>
+	                        	<label for="sentence">The sentence that they'll click on:</label>
+	                        </td>
+						</tr>
+						<tr>
+							<td>
+	                        	<input type="text" name="sentence" value="Click for the recipe." id="sentence">
+		                    </td>
+						</tr>
+	                    <tr><td colspan="2"><div></div></td></tr>
+	                    <tr>
+							<td>
+	                        	<label for="recipeTitle">The Recipe Title:</label>
+	                        </td>
+						</tr>
+						<tr>
+							<td>
+	                        	<input type="text" name="recipeTitle" value="" id="recipeTitle">
+		                    </td>
+						</tr>
+	                    <tr><td colspan="2"><div></div></td></tr>
+	                    <tr>
+							<td>
+	                        	<label for="recipeCategory">The Recipe Category:</label>
+	                        </td>
+						</tr>
+						<tr>
+							<td>
+	                        	<select name="recipeCategory">
+								  <option value="breakfast">Breakfast</option>
+								  <option value="bread">Bread</option>
+								  <option value="dessert">Dessert &amp; Fruit</option>
+								  <option value="lunch">Lunch &amp; Sandwiches</option>
+								  <option value="entree">Entrees</option>
+								  <option value="side">Side Dishes</option>
+								  <option value="appetizer">Appetizers</option>
+								  <option value="salad">Salad</option>
+								  <option value="sauce">Sauces, Dressings, &amp; Seasonings</option>
+								  <option value="soup">Soup</option>
+								  <option value="vegetable">Vegetables</option>
+								  <option value="drink">Drinks</option>
+								</select>
+		                    </td>
+						</tr>
+	                </table>
+	                <br />
+	                <a href="javascript:HighlightDialog.insert(HighlightDialog.local_ed)">Insert!</a>
+				</p>
+	        </form>
+	    </div>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+body{background: #FBFAE5;}
+
+#centered{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#content{
+	resize: none;
+	width: 800px;
+}
+
+h2{
+	color: #BA952E;
+	display: inline;
+}
+
+#howToCode{
+	font-style: oblique;
+	margin-top: 500px;
+	color: #666;
+}
+
+xmp{margin: -10px 0 0 -300px;}
+
+xmp b{font-weight: normal;}
+
+#assetsTable{
+	width: 950px;
+	border-collapse: collapse;
+}
+
+#assetsTable #header{
+	font-weight: bold;
+	background: #BA952E;
+	color: #FBFAE5;
+}
+
+#assetsTable tr td{
+	vertical-align: top;
+	padding: 5px 3px 5px 3px;	
+}
+
+#contentColumn{width: 436px;}
+
+.subcategoryHidden{display: none;}
+
+.truncateContent{
+	height: 50px !important;
+	overflow: hidden;
+}
+
+#edit{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background: #FBFAE5;
+	padding: 20px;
+	width: 900px;
+	border: 5px solid #BA952E;
+	display: none;
+}
+
+#flash{
+	display: none;
+	background: #77F88A;
+	padding: 20px;
+	width: 910px;
+	text-align: center;
+}
+
+#flashClose{
+	float: right;
+	clear: both;
+	margin: -5px 0 0 0;
+}
